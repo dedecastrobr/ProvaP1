@@ -9,7 +9,6 @@ public class Menu {
 	private String nomeMenu = "";
 	private List<String> opsMenu = new ArrayList<String>();
 	private int opSelecionada = 0;
-	private int op = 0;
 
 	public static Scanner scan = new Scanner(System.in);
 
@@ -44,15 +43,4 @@ public class Menu {
 
 		return opSelecionada;
 	}
-	
-	public int motoOuCarro() {
-		try {
-			op = scan.nextInt();
-			scan.nextLine();
-		}catch(Exception e){
-			System.out.println("Valor incorreto! Somente Números!");
-		}
-		return op;
-	}
-
 }
