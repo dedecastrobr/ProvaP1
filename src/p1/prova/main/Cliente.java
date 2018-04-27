@@ -25,11 +25,11 @@ public class Cliente {
 		nomeCliente = scan.nextLine();
 
 		try {
-			System.out.println("Informe o CPF cliente: ");
+			System.out.println("Informe o CPF do cliente: ");
 			cpfCliente = scan.nextLong();
 			scan.nextLine();
 
-			System.out.println("Informe a CNH cliente: ");
+			System.out.println("Informe a CNH do cliente: ");
 			cnhCliente = scan.nextLong();
 			scan.nextLine();
 
@@ -64,4 +64,7 @@ public class Cliente {
 		this.cnhCliente = cnhCliente;
 	}
 
+	public void mostraDados() {
+		System.out.println("Nome: " + nomeCliente + "\nCPF: " + cpfCliente + "\nCNH " + cnhCliente);
+	}
 }

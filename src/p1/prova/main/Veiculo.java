@@ -6,9 +6,10 @@ import p1.prova.tools.Menu;
 
 public class Veiculo {
 
-	private String placasVeiculo;
+	String placasVeiculo;
 	private String renavamVeiculo;
 	private String tipoVeiculo;
+	private int indice;
 
 	public Veiculo(String placas, String renavam, String tipo) {
 		placasVeiculo = placas;
@@ -25,6 +26,8 @@ public class Veiculo {
 
 		System.out.println("Informe as placas do veículo: ");
 		placasVeiculo = scan.nextLine();
+		
+
 
 	}
 
@@ -56,5 +59,12 @@ public class Veiculo {
 		System.out.println("------------------------------------------");
 		System.out.println("Placas: " + placasVeiculo + " RENAVAM: " + renavamVeiculo);
 	}
+    public int getIndice() {
+		return indice;
+    }
+    public void setIndice(int indice) {
+		this.indice = indice;
+    }
+	
 
 }

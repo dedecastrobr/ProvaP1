@@ -8,7 +8,7 @@ import p1.prova.tools.Menu;
 public class Carro extends Veiculo {
 
 	private int numeroPortas = 0;
-
+	private int indice;
 	public Carro(String placas, String renavam, int portas) {
 		super(placas, renavam, "C");
 		numeroPortas = portas;
@@ -48,5 +48,12 @@ public class Carro extends Veiculo {
 		super.mostraDados();
 		System.out.println("TIPO: CARRO - Número de Portas: " + numeroPortas);
 	}
+    public int getIndice() {
+		return indice;
+    }
+    public void setIndice(int indice) {
+		this.indice = indice;
+    }
+	
 
 }

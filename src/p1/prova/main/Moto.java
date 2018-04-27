@@ -9,6 +9,8 @@ public class Moto extends Veiculo {
 
 	private int cilindradasMoto = 0;
 
+	private int indice;
+
 	public Moto(String placas, String renavam, int cilindradas) {
 		super(placas, renavam, "M");
 		cilindradasMoto = cilindradas;
@@ -47,4 +49,11 @@ public class Moto extends Veiculo {
 		super.mostraDados();
 		System.out.println("TIPO: MOTO - Cilindradas: " + cilindradasMoto);
 	}
+    public int getIndice() {
+		return indice;
+    }
+    public void setIndice(int indice) {
+		this.indice = indice;
+    }
+	
 }

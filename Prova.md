@@ -19,7 +19,6 @@ Observe o modelo de classes (MyCar, Cliente, Veiculo, Moto, Carro e Menu) e resp
 
 * Qual a semelhança das classes Carro e Moto?
 
-
 * Qual o papel da classe Veículo?
 
 
@@ -28,7 +27,14 @@ Observe o modelo de classes (MyCar, Cliente, Veiculo, Moto, Carro e Menu) e resp
 
 
 ### Resposta
-> [Suas resposta]
+
+Todas estão na package p1.prova.main;
+
+Ambas extendem a classe Veículo, recebem os dados da classe Veiculo("Pai"). Dentro dos construtores das classes Carro e Moto é utilizado o comando Super para receber os construtores da classe Veiculo.
+
+A classe Veiculo tem um construtor que recebe as informações de Renavam, placa e tipo do veiculo.
+
+Pois estão no mesmo projeto.
 
 ___________
 
@@ -40,8 +46,7 @@ Implemente o cadastro de veículos. O usuário deve selecionar se pretende cadas
 
 ### Resposta
 
-> [Suas resposta]
-
+Foi criado o método cadastraVeiculo que cria um novo Menu para cadastrar cada tipo de veiculo, onde no switch case, caso o usuário digite 1, cairá na criação de carro, e caso digite 2, na de motos.
 
 __________
 
@@ -53,8 +58,7 @@ Implemente a listagem de clientes. Considere criar um método na classe Cliente 
 
 ### Resposta
 
-> [Conte como você implementou]
-
+Foram criados 2 métodos, o listaClientes no MyCar.java,onde o for serve para repetir os comandos de acordo com a quantidade de clientes, que possui um contador para informar o número do cliente e chama o método mostraDados da classe Cliente, o qual imprime na tela as informações do cliente.
 
 __________
 
@@ -66,8 +70,7 @@ Implemente a busca de veículos. O sistema deve perguntar para o usuário a plac
 
 ### Resposta
 
-> [Conte como você implementou]
-
+O buscaCarros e o buscaMotos utilizam o scan para pegar a informação do teclado e procuram o indice(index) do veiculo.
 
 __________
 
@@ -87,11 +90,9 @@ A aplicação tem uma opção "Gerar Dados" no menu principal que tem por objeti
 
 ### Resposta
 
-> [Suas resposta]
+Foi criado o cliente Cliente "Gabriel",902139123,21312412 e a Moto "123ABC","23141231","M"
 
-
-__________
-
+Esse método possui os parâmetros pré definidos, quando criados pelo menu do sistema o construtor é vazio, e damos as informações do telcado.
 
 
 
