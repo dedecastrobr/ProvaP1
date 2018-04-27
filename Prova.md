@@ -28,7 +28,10 @@ Observe o modelo de classes (MyCar, Cliente, Veiculo, Moto, Carro e Menu) e resp
 
 
 ### Resposta
-> [Suas resposta]
+> [1- São classes de Herança,onde a caracteriscas de uma principal são usadas nas demais e assim são interligadas.
+2- Ambas as classes pedem para que o usuário informe caracteristicas de um determinado veículo,seja as portas do carro ou cilindradas da moto,placa e renavam.
+3- A classe veículo identifica o veículo que foi caracterizado,seja nas classes carro ou moto. 
+4- Os pacotes tem extensão com a classe principal,pois ela chama os dados obtidos pelas classes filhas.]
 
 ___________
 
@@ -40,7 +43,15 @@ Implemente o cadastro de veículos. O usuário deve selecionar se pretende cadas
 
 ### Resposta
 
-> [Suas resposta]
+> [ private static void cadastrarVeiculo() { 
+			sistem.out.println (" Bem vindo ao cadastro de veículos! ");
+			sistem.out.println (" 1 --> carro ");
+			sistem.out.println (" 2 --> moto ");
+			sistem.out.println (" 99 --> sair ");
+		int opSelecionada = scan.nextInt();
+		scan = nextLine();
+			return opSelecionada;
+		} // aqui tentei mostrar o menu onde selecionamos o tipo de veiculo,e aqui estão suas opções para cadastro.]
 
 
 __________
@@ -53,7 +64,18 @@ Implemente a listagem de clientes. Considere criar um método na classe Cliente 
 
 ### Resposta
 
-> [Conte como você implementou]
+> [ public static ArrayList<Cliente> ListaClientes = new ArrayList<Cliente>
+	List<Cliente> clientesNovos = new ArrayList<cliente>();
+	//na classe MyCar,eu botaria para adicionar os clientes cadastrados..logo abaixo
+		ListaClientes.addAll //para adicionar todos de uma vez
+		// metodo
+		public void mostraDados() ;
+			super.mostraDados();
+		sistem.out.println (" nome: + this.Nome)
+		sistem.out.println (" cpf: + this.CPF)
+		sistem.out.println (" cnh: + this.CNH)
+		// queria que aparecesse o nome,cpf e cnh do cliente
+	]
 
 
 __________
@@ -66,7 +88,7 @@ Implemente a busca de veículos. O sistema deve perguntar para o usuário a plac
 
 ### Resposta
 
-> [Conte como você implementou]
+> [ eu não fiz a parte de buscas nos trabalhos anteriores,pois estou no inicio deles(menus,cadastros)]
 
 
 __________
@@ -87,7 +109,14 @@ A aplicação tem uma opção "Gerar Dados" no menu principal que tem por objeti
 
 ### Resposta
 
-> [Suas resposta]
+> [ 1- 	ListaClientes.add(new Cliente ("Ingrid",666.999.000-15,63431911));
+		ListaClientes.add(new Cliente ("Vitor",190.192.001-01,19116343));
+		ListaMotos.add(new Moto ("EOQ6669",A20LK3H57DK32COE,1350));
+		ListaMotos.add(new Moto ("AEK1911",A09EBB4N59IL3S4R,999));
+		2- cada construtor,seja de carro,moto ou cliente,chama as características de cada um,e temos o construtor de parâmetro (o que chama as caracteríscas de cada um...portas do CARRO,cilindradas da MOTO e cnh/cpf do CLIENTE)
+		3- //acho que --V
+		sistem.out.println ("numero de elementos" + list.size() );
+		//lista.size = tamanho da lista..em tradução literal ]
 
 
 __________
