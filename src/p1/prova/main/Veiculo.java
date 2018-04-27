@@ -29,7 +29,7 @@ public class Veiculo {
 	}
 
 	public String getPlacasVeiculo() {
-		return placasVeiculo;
+		return this.placasVeiculo;
 	}
 
 	public void setPlacasVeiculo(String placasVeiculo) {
@@ -54,7 +54,7 @@ public class Veiculo {
 
 	public void mostraDados() {
 		System.out.println("------------------------------------------");
-		System.out.println("Placas: " + placasVeiculo + " RENAVAM: " + renavamVeiculo);
+		System.out.println("Placas: " + placasVeiculo + " \nRENAVAM: " + renavamVeiculo);
 	}
 
 }

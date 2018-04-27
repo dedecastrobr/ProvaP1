@@ -48,5 +48,10 @@ public class Carro extends Veiculo {
 		super.mostraDados();
 		System.out.println("TIPO: CARRO - Número de Portas: " + numeroPortas);
 	}
+	
+	public boolean save() {
+		MyCar.listaVeiculos.add(this);
+		return true;
+	}
 
 }

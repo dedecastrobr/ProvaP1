@@ -28,7 +28,13 @@ Observe o modelo de classes (MyCar, Cliente, Veiculo, Moto, Carro e Menu) e resp
 
 
 ### Resposta
-> [Suas resposta]
+> As classes se relacionam estando associados há uma "package".
+
+> A semelhança entre as classes carro e moto é que as duas extendem a classe Veículo.
+
+> O papel da classe Veículo é compartilhar os atributos que as classes moto e carro tem em comum.
+
+> O Menu precisa ser importado em cada classe que ultiliza seus atributos.
 
 ___________
 
@@ -40,7 +46,7 @@ Implemente o cadastro de veículos. O usuário deve selecionar se pretende cadas
 
 ### Resposta
 
-> [Suas resposta]
+> Foi criado o método de cadastro através de um "switch" que chama o método de criação da moto ou do carro, e se o objeto for diferente de "null" ele é salvo na lista de Veículos.
 
 
 __________
@@ -53,7 +59,7 @@ Implemente a listagem de clientes. Considere criar um método na classe Cliente 
 
 ### Resposta
 
-> [Conte como você implementou]
+> A listagem de clientes foi feito um método mostraCliente na classe cliente e com um "for" que pega cada cliente que temos na listaClientes e usa ultiliza o método mostraCliente em tais.
 
 
 __________
@@ -66,7 +72,7 @@ Implemente a busca de veículos. O sistema deve perguntar para o usuário a plac
 
 ### Resposta
 
-> [Conte como você implementou]
+> Para a busca de veículos foi criado um método que faz um "for" em toda a listaVeiculos e compara o que foi digitado pelo usuário, se for igual o método imprime o Veiculo na tela, se não imprime um erro.
 
 
 __________
@@ -87,7 +93,11 @@ A aplicação tem uma opção "Gerar Dados" no menu principal que tem por objeti
 
 ### Resposta
 
-> [Suas resposta]
+> O método "Gerar Dados" foi alterado para gerar Clientes e Motos do mesmo jeito que é feito para carros.
+
+> A diferença entre os construtores são os atributos a serem adicionados em cada tipo de objeto.
+
+> Foi implementado uma contagem bem simples onde o metodo faz um "for" das listas e coloca o número de cada objeto acima dos seus dados.
 
 
 __________

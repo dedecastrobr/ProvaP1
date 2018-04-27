@@ -47,4 +47,9 @@ public class Moto extends Veiculo {
 		super.mostraDados();
 		System.out.println("TIPO: MOTO - Cilindradas: " + cilindradasMoto);
 	}
+	
+	public boolean save() {
+		MyCar.listaVeiculos.add(this);
+		return true;
+	}
 }

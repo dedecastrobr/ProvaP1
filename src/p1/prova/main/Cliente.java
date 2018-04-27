@@ -63,5 +63,10 @@ public class Cliente {
 	public void setCnhCliente(long cnhCliente) {
 		this.cnhCliente = cnhCliente;
 	}
+	
+	public void mostraCliente() {
+		System.out.println("------------------------------------------");
+		System.out.println("Nome: "+ this.nomeCliente +"\nCPF: "+ this.cpfCliente +"\nCNH: "+ this.cnhCliente);
+	}
 
 }
