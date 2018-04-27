@@ -28,7 +28,11 @@ Observe o modelo de classes (MyCar, Cliente, Veiculo, Moto, Carro e Menu) e resp
 
 
 ### Resposta
-> [Suas resposta]
+> [*Através das packages escritas na primeira linha de cada classe.
+   *Ambas as classes possuem um construtor que solicita informações do usuário, seta as placas, renavams e tipos dos veículos, lê o que o usuário digitou e mostra os dados após serem digitados.
+   *O papel da classe Veículo é criar as variáveis para a placa, renavam e tipo do veículo, e imprimir na tela os dados digitados pelo usuário, depois que este realizar o cadastro do veículo.
+   *Através de sua importação com a linha "import p1.prova.tools.Menu;".                                      
+   ]
 
 ___________
 
@@ -53,7 +57,7 @@ Implemente a listagem de clientes. Considere criar um método na classe Cliente 
 
 ### Resposta
 
-> [Conte como você implementou]
+> [Logo abaixo do texto "LISTA DE CLIENTES", do método "listarClientes()", criei uma variável chamada "pos", do tipo "int", com valor 0, que armazenará o índice de cada cliente criado. Depois, fiz um "for" que recebe os dados dos clientes que foram armazenados em "listaClientes", e adiciona uma numeração para cada cliente cadastrado (pos += 1). O primeiro cliente cadastrado receberá o número 1, o segundo, o número 2, e assim por diante. E por fim, são exibidos os dados do cliente na tela, junto a sua numeração (cliente.mostraDados). ]
 
 
 __________
@@ -66,7 +70,7 @@ Implemente a busca de veículos. O sistema deve perguntar para o usuário a plac
 
 ### Resposta
 
-> [Conte como você implementou]
+> [No método "buscaVeiculos()", criei uma variável chamada "busca", do tipo String, com valor nulo, que vai ler, em "busca = scan.nextLine()", a placa digitada pelo usuário. Fiz um "if" que compara se a placa lida pela "busca" é igual a cadastrada. Se sim, aparece na tela: Veículo encontrado!, senão: Erro na busca do veículo!.]
 
 
 __________

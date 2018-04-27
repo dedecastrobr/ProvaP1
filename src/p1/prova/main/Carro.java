@@ -43,6 +43,11 @@ public class Carro extends Veiculo {
 	public void setNumeroPortas(int numeroPortas) {
 		this.numeroPortas = numeroPortas;
 	}
+	
+	public boolean save(){
+		MyCar.listaVeiculos.add(this);
+		return true;
+	}
 
 	public void mostraDados() {
 		super.mostraDados();

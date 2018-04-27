@@ -3,7 +3,10 @@ package p1.prova.main;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
+import escola.Aluno;
+import escola.Professor;
 import p1.prova.tools.Menu;
 
 public class MyCar {
@@ -14,8 +17,11 @@ public class MyCar {
 	public static List<String> opsMenuPrincipal = Arrays.asList("Clientes", "Veículos", "Gerar Dados");
 	public static List<String> opsMenuClientes = Arrays.asList("Cadastrar Clientes", "Listar Clientes");
 	public static List<String> opsMenuVeiculos = Arrays.asList("Lista Veículos", "Cadastrar Veículo", "Buscar Veículo");
-
+	
+	public static List<String> opsMenuMotosCarros = Arrays.asList("Motos", "Carros"); 
 	public static List<String> opsMenuTipo = Arrays.asList("Carros", "Motos", "Todos");
+	
+	public static Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
@@ -59,10 +65,42 @@ public class MyCar {
 						listarVeiculos(tipoVeiculos.getOption());
 						break;
 					case 1:
-						cadastrarVeiculo();
+						Menu menuMotosCarros = new Menu("Cadastrar qual veículo?", opsMenuMotosCarros);
+						menuMotosCarros.show();
+						
+						int opcaoMotCar = menuMotosCarros.getOption();
+						do {
+							switch(opcaoMotCar) {
+							case 0:
+								cadastrarVeiculo();
+								Moto moto = new Moto();
+								if(moto != null){
+									moto.save();
+									System.out.println("----------------------------------");
+						    		System.out.println("Êxito no cadastro da moto!");
+						    		System.out.println("---------------------------------");
+						    		moto.mostraDados();
+								}else {
+									System.out.println("Erro no cadastro da moto!");
+								}
+								break;
+							default:
+								break;
+							}
+							opcaoMotCar = menuMotosCarros.getOption();
+						}while(opcaoMotCar != 99);
 						break;
 					case 2:
-						buscaVeiculos();
+						Veiculo veiculo = buscaVeiculos();
+						if(veiculo != null && veiculo.getPlacasVeiculo() != ""){
+							System.out.println("----------------------------------");
+				    		System.out.println("Veículo encontrado!");
+				    		System.out.println("---------------------------------");
+						}else{
+							System.out.println("----------------------------------");
+				    		System.out.println("Erro na busca do veículo!");
+				    		System.out.println("---------------------------------");
+						}
 						break;
 					default:
 						break;
@@ -87,10 +125,18 @@ public class MyCar {
 
 	}
 
-	private static void buscaVeiculos() {
-		// TODO Auto-generated method stub
-
-	}
+	private static Veiculo buscaVeiculos() {
+		String busca = "";
+		System.out.println("Placa do veículo: ");
+    	busca = scan.nextLine();                             
+    	for (Veiculo veiculo : listaVeiculos) {               
+    		if (busca.equals(veiculo.getPlacasVeiculo())) {             
+    			veiculo.setIndice(listaVeiculos.indexOf(veiculo));
+    			return veiculo;
+    		}
+    	}
+    	return null;
+    }
 
 	private static void gerarDados() {
 		
@@ -102,8 +148,12 @@ public class MyCar {
 	}
 
 	private static void cadastrarVeiculo() {
-		// TODO Auto-generated method stub
-
+		Veiculo veic = new Veiculo();
+		if (veic != null) {
+			veic.save();
+		}else{
+			System.out.println("Erro no cadastro da moto!");
+		}
 	}
 
 	private static void listarVeiculos(int option) {
@@ -133,7 +183,14 @@ public class MyCar {
 
 	private static void listarClientes() {
 		System.out.println("LISTA DE CLIENTES: ");
-
+		System.out.println("---------------------------------");
+		int pos = 0;
+		for (Cliente cliente : listaClientes){
+			pos += 1;
+			System.out.println("Número: "+ pos);
+			cliente.mostraDados();
+			System.out.println("---------------------------------");
+		}
 	}
 
 	private static void cadastrarCliente() {

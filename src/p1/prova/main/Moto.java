@@ -42,6 +42,11 @@ public class Moto extends Veiculo {
 	public void setCilindradasMoto(int cilindradasMoto) {
 		this.cilindradasMoto = cilindradasMoto;
 	}
+	
+	public boolean save(){
+		MyCar.listaVeiculos.add(this);
+		return true;
+	}
 
 	public void mostraDados() {
 		super.mostraDados();

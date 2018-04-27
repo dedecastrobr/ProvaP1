@@ -9,6 +9,7 @@ public class Veiculo {
 	private String placasVeiculo;
 	private String renavamVeiculo;
 	private String tipoVeiculo;
+	private int indice;
 
 	public Veiculo(String placas, String renavam, String tipo) {
 		placasVeiculo = placas;
@@ -50,6 +51,19 @@ public class Veiculo {
 
 	public void setTipoVeiculo(String tipoVeiculo) {
 		this.tipoVeiculo = tipoVeiculo;
+	}
+	
+	public int getIndice(){
+		return indice;
+	}
+	
+	public void setIndice(int indice){
+		this.indice = indice;
+	}
+	
+	public boolean save(){
+		MyCar.listaVeiculos.add(this);
+		return true;
 	}
 
 	public void mostraDados() {
