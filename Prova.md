@@ -33,6 +33,10 @@ Observe o modelo de classes (MyCar, Cliente, Veiculo, Moto, Carro e Menu) e resp
    *O papel da classe Veículo é criar as variáveis para a placa, renavam e tipo do veículo, e imprimir na tela os dados digitados pelo usuário, depois que este realizar o cadastro do veículo.
    *Através de sua importação com a linha "import p1.prova.tools.Menu;".                                      
    ]
+   
+### Correção
+
+> Não fez menção aos conceitos de herança que relaciona as classes Veiculo, Moto e Carro. **2.0 pontos**
 
 ___________
 
@@ -45,6 +49,10 @@ Implemente o cadastro de veículos. O usuário deve selecionar se pretende cadas
 ### Resposta
 
 > [Suas resposta]
+
+### Correção
+
+> Questão sem resposta. Cadastro não funciona corretamente, aparentemente cria dois veículos. **0.0**
 
 
 __________
@@ -59,6 +67,9 @@ Implemente a listagem de clientes. Considere criar um método na classe Cliente 
 
 > [Logo abaixo do texto "LISTA DE CLIENTES", do método "listarClientes()", criei uma variável chamada "pos", do tipo "int", com valor 0, que armazenará o índice de cada cliente criado. Depois, fiz um "for" que recebe os dados dos clientes que foram armazenados em "listaClientes", e adiciona uma numeração para cada cliente cadastrado (pos += 1). O primeiro cliente cadastrado receberá o número 1, o segundo, o número 2, e assim por diante. E por fim, são exibidos os dados do cliente na tela, junto a sua numeração (cliente.mostraDados). ]
 
+### Correção
+
+> Correto. Esse índice poderia fazer parte do cadastro do cliente, por que ele vai variar a cada execução. **1.0**
 
 __________
 
@@ -71,6 +82,10 @@ Implemente a busca de veículos. O sistema deve perguntar para o usuário a plac
 ### Resposta
 
 > [No método "buscaVeiculos()", criei uma variável chamada "busca", do tipo String, com valor nulo, que vai ler, em "busca = scan.nextLine()", a placa digitada pelo usuário. Fiz um "if" que compara se a placa lida pela "busca" é igual a cadastrada. Se sim, aparece na tela: Veículo encontrado!, senão: Erro na busca do veículo!.]
+
+### Correção
+
+> Não mostra o resultado da busca. Cadastro não funciona corretamente. **1.5**
 
 
 __________
@@ -94,9 +109,21 @@ A aplicação tem uma opção "Gerar Dados" no menu principal que tem por objeti
 > [Suas resposta]
 
 
+### Correção
+
+> Questão sem resposta. **0.0**
+
 __________
 
 
+### Nota de Correção
+> A prova não executou por causa de dois imports na classe principal que tiveram que ser comentados para que a prova não fosse anulada. Descontado **1.0 ponto**, por não ter testado antes de entregar!
+
+		//import escola.Aluno;
+		//import escola.Professor;
+
+
+## Nota da Prova: 3.5
 
 
 ##Boa prova!

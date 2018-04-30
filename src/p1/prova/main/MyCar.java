@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-import escola.Aluno;
-import escola.Professor;
+//import escola.Aluno;
+//import escola.Professor;
 import p1.prova.tools.Menu;
 
 public class MyCar {
