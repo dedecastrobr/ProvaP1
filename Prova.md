@@ -38,6 +38,10 @@ Pois estão no mesmo projeto.
 
 ___________
 
+### Correção
+
+> Não mencionou o conceito de herança claramente. E mão fala do import da classe Menu. **2.0 pontos**
+
 ##Questão 02 (2 pontos)
 
 
@@ -47,6 +51,10 @@ Implemente o cadastro de veículos. O usuário deve selecionar se pretende cadas
 ### Resposta
 
 Foi criado o método cadastraVeiculo que cria um novo Menu para cadastrar cada tipo de veiculo, onde no switch case, caso o usuário digite 1, cairá na criação de carro, e caso digite 2, na de motos.
+
+### Correção
+
+> Não utlizou o método show da classe menu e o método já exitia, era só colocar o código. **1.0 ponto**
 
 __________
 
@@ -60,6 +68,10 @@ Implemente a listagem de clientes. Considere criar um método na classe Cliente 
 
 Foram criados 2 métodos, o listaClientes no MyCar.java,onde o for serve para repetir os comandos de acordo com a quantidade de clientes, que possui um contador para informar o número do cliente e chama o método mostraDados da classe Cliente, o qual imprime na tela as informações do cliente.
 
+
+### Correção
+
+> O método listarClientes() já existia era só colocar o código. Não precisava de um contador **0.5 ponto**
 __________
 
 ##Questão 04 (2 pontos)
@@ -72,6 +84,10 @@ Implemente a busca de veículos. O sistema deve perguntar para o usuário a plac
 
 O buscaCarros e o buscaMotos utilizam o scan para pegar a informação do teclado e procuram o indice(index) do veiculo.
 
+
+### Correção
+
+> Não funciona. Ele sempre diz que "encontrou" antes de pesquisar. E não tem por que ter dois métodos se todos são veículos.. **0.0 ponto**
 __________
 
 ##Questão 05 (2 pontos)
@@ -94,6 +110,13 @@ Foi criado o cliente Cliente "Gabriel",902139123,21312412 e a Moto "123ABC","231
 
 Esse método possui os parâmetros pré definidos, quando criados pelo menu do sistema o construtor é vazio, e damos as informações do telcado.
 
+### Correção
+
+> Correto. **2.0 pontos**
+
+
+
+## Nota da prova: 5.5
 
 
 ##Boa prova!
