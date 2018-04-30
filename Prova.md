@@ -36,6 +36,8 @@ Observe o modelo de classes (MyCar, Cliente, Veiculo, Moto, Carro e Menu) e resp
 
 > O Menu precisa ser importado em cada classe que ultiliza seus atributos.
 
+### Correção
+> As respostas estão corretas. **3 pontos**
 ___________
 
 ##Questão 02 (2 pontos)
@@ -47,6 +49,9 @@ Implemente o cadastro de veículos. O usuário deve selecionar se pretende cadas
 ### Resposta
 
 > Foi criado o método de cadastro através de um "switch" que chama o método de criação da moto ou do carro, e se o objeto for diferente de "null" ele é salvo na lista de Veículos.
+
+### Correção
+> Poderia ter criado um objeto da classe Menu com as opçóes "Carro, Moto". **1.5 pontos**
 
 
 __________
@@ -60,7 +65,8 @@ Implemente a listagem de clientes. Considere criar um método na classe Cliente 
 ### Resposta
 
 > A listagem de clientes foi feito um método mostraCliente na classe cliente e com um "for" que pega cada cliente que temos na listaClientes e usa ultiliza o método mostraCliente em tais.
-
+### Correção
+> Correto. O método poderia mostrar os dados de UM objeto e o for rodar onde o método está sendo chamado. . **1 ponto**
 
 __________
 
@@ -74,6 +80,8 @@ Implemente a busca de veículos. O sistema deve perguntar para o usuário a plac
 
 > Para a busca de veículos foi criado um método que faz um "for" em toda a listaVeiculos e compara o que foi digitado pelo usuário, se for igual o método imprime o Veiculo na tela, se não imprime um erro.
 
+### Correção
+> Correto. **2.0 pontos**
 
 __________
 
@@ -99,9 +107,13 @@ A aplicação tem uma opção "Gerar Dados" no menu principal que tem por objeti
 
 > Foi implementado uma contagem bem simples onde o metodo faz um "for" das listas e coloca o número de cada objeto acima dos seus dados.
 
+### Correção
+> Faz o que pede mas poderia apenas mostrar os totais. A diferença, além dos atributos são os contrutores que são chamados. no método "geraDados" os atributos são passados diretamente, e no outro é o Scanner que pede. **1.0 ponto**
 
 __________
 
+
+### Nota da prova: 8.5
 
 
 
