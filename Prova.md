@@ -33,6 +33,12 @@ Observe o modelo de classes (MyCar, Cliente, Veiculo, Moto, Carro e Menu) e resp
 3- A classe veículo identifica o veículo que foi caracterizado,seja nas classes carro ou moto. 
 4- Os pacotes tem extensão com a classe principal,pois ela chama os dados obtidos pelas classes filhas.]
 
+
+### Correção
+
+> Nem todas as classes são de herança, o conceito não está claramente descrito. A semelhança entre as classes é a relação de herança (essas sim) com a classe pai Veiculo. O conceito de pacotes está um pouco vago também. **1.5 pontos**
+
+
 ___________
 
 ##Questão 02 (2 pontos)
@@ -54,6 +60,9 @@ Implemente o cadastro de veículos. O usuário deve selecionar se pretende cadas
 		} // aqui tentei mostrar o menu onde selecionamos o tipo de veiculo,e aqui estão suas opções para cadastro.]
 
 
+### Correção
+
+> Deveria ter criado um objeto da classe Menu com as opções. Tentou mostrar, mas não implementa nada de prático.. **0.5 ponto**
 __________
 
 ##Questão 03 (1 ponto)
@@ -78,6 +87,9 @@ Implemente a listagem de clientes. Considere criar um método na classe Cliente 
 	]
 
 
+### Correção
+
+> Era só pra listar os itens da lista já existente. **0.0 ponto**
 __________
 
 ##Questão 04 (2 pontos)
@@ -91,6 +103,9 @@ Implemente a busca de veículos. O sistema deve perguntar para o usuário a plac
 > [ eu não fiz a parte de buscas nos trabalhos anteriores,pois estou no inicio deles(menus,cadastros)]
 
 
+### Correção
+
+> Isso não é um argumento válido para um questão. **0.0 ponto**
 __________
 
 ##Questão 05 (2 pontos)
@@ -118,10 +133,16 @@ A aplicação tem uma opção "Gerar Dados" no menu principal que tem por objeti
 		sistem.out.println ("numero de elementos" + list.size() );
 		//lista.size = tamanho da lista..em tradução literal ]
 
-
 __________
 
 
+### Correção
+
+> Deveria criar clientes também, e a lista começa com letra minuscula. A diferença são quais construtores estão sendo chamados. Um já recebe os valores e o outro perunta os mesmos ao usuário. **0.5 ponto**
+
+
+
+## Nota da Prova: 2.5
 
 
 ##Boa prova!
