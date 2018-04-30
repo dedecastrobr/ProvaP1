@@ -54,7 +54,7 @@ Foi criado o método cadastraVeiculo que cria um novo Menu para cadastrar cada t
 
 ### Correção
 
-> Não utlizou o método show da classe menu e o método já exitia, era só colocar o código. **1.0 ponto**
+> Não utlizou o método show da classe menu e o método já exitia, era só colocar o código. **1.5 ponto**
 
 __________
 
@@ -71,7 +71,7 @@ Foram criados 2 métodos, o listaClientes no MyCar.java,onde o for serve para re
 
 ### Correção
 
-> O método listarClientes() já existia era só colocar o código. Não precisava de um contador **0.5 ponto**
+> O método listarClientes() já existia era só colocar o código. Não precisava de um contador **0.8 ponto**
 __________
 
 ##Questão 04 (2 pontos)
@@ -116,7 +116,7 @@ Esse método possui os parâmetros pré definidos, quando criados pelo menu do s
 
 
 
-## Nota da prova: 5.5
+## Nota da prova: 6.3
 
 
 ##Boa prova!
